@@ -9,14 +9,13 @@ body {
 
 .container-seccao-formulario {
     width: 800px;
-    height: 480px;
+    height: 402px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('../imagens/bg-repeat.jpg');
     background-repeat: repeat-x;
     background-size: contain;
-    padding: 12px 50px;
 }
 
 .conteudo {
@@ -54,32 +53,25 @@ body {
 .input, .submit {
     width: 298px;
     height: 38px;
-    margin-bottom: 14.98px;
     border-radius: 5px;
 }
 
 .input {
     border-width: 1px;
+    padding-left: 10px;
 }
 
-.input:nth-child(4){
-    margin-bottom: 7px;
-}
-.input:last-child{
-    margin-bottom: 0;
-}
-
-.input.mensagem {
+.input:nth-child(7) {
+    padding-top: 8px;
     width: 298.01px;
     height: 100px;
+    
 }
 
 .input::placeholder {
     font-weight: 700;
     font-size: 15px;
     color: #A8A8A8;
-    padding-left: 9px;
-    padding-top: 8px;
 }
 
 .formulario .aviso {
@@ -97,9 +89,23 @@ body {
     cursor: pointer;
 }
 
+.obrigatorio {
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+    margin-bottom: 6px;
+    text-align: left;
+    width: 100%;
+    opacity: 0;
+}
+
 .red-border {
     border-color: #F52E2E;
 }
 .green-border {
     border-color: #00C22B;
+}
+
+.mostrar {
+    opacity: 1;
 }
